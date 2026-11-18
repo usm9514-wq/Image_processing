@@ -1,0 +1,35 @@
+전체 데이터 100개
+
+
+Batch Gradient Descent
+100 개 데이터 각각에 대해서 로스 각각 구하고 평균 구한다 -> loss 1개 나옴
+
+gradient 계산하고 gradient descent해준다
+
+ MIni-batch stochastic gradient descent해준다
+ 만든이가  사전에 지정해둔 batch size만큼 데이터 추출해서 로스 각각 구하고 평균 구한다 batch size 
+
+
+
+
+
+
+
+ ------------------------------
+
+ Dataset : 데이터를 가져올 Dataset
+batch_size : 한번에 가져올 데이터 개수 
+shuffle : 데이터를 가져오는 순서를 섞을지 여부
+num_workers : 데이터 로딩에 사용할 별도 작업 프로세스 수
+
+
+
+Resize(64,64) : 이미지 크기를 64 x 64로 변경
+ToTenor() : 이미지를 텐서로 변환
+
+
+
+-> 흑백 사진은 (1, 64, 64)
+
+-> 컬러 사진은 (3, 64, 64)
+
